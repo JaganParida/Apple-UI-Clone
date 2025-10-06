@@ -109,14 +109,39 @@ html {
   font-size: 25px;
 }
 .prod {
-  display: inline-flex;
+  display: flex;
   width: 100%;
+  margin: 5px;
+}
+.card .detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .card {
   width: 50%;
   height: 580px;
-  margin: 5px;
+  margin: 10px 5px;
+  object-position: bottom;
+  background-position: center;
+  background-size: cover;
 }
-.card img {
-  width: 100%;
+#card1 {
+  background: url(card1.png);
+}
+#card2 {
+  background: url(card2.png);
+}
+#card3 {
+  background: url(card3.png);
+}
+#card4 {
+  background: url(card4.png);
+}
+#card5 {
+  background: url(card5.png);
+}
+#card6 {
+  background: url(card6.png);
 }
