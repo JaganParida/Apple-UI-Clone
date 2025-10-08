@@ -1,10 +1,10 @@
 @font-face {
   font-family: Aapplefont;
-  src: url(./sf-pro-display_regular.woff2);
+  src: url(Assets/sf-pro-display_regular.woff2);
 }
 @font-face {
   font-family: Helvetica;
-  src: url(./Helvetica.ttf);
+  src: url(Assets//Helvetica.ttf);
 }
 * {
   margin: 0;
@@ -46,7 +46,7 @@ html {
   margin-top: 25px;
   font-family: Helvetica;
   gap: 15px;
-  background: url(iphone17.jpg);
+  background: url(Assets/iphone17.jpg);
   background-position: center;
   background-size: cover;
   height: 89%;
@@ -84,7 +84,7 @@ html {
 .air {
   height: 80%;
   width: 100%;
-  background: url(iphoneair.png);
+  background: url(Assets/iphoneair.png);
   background-position: center;
   background-size: cover;
   text-align: center;
@@ -98,50 +98,57 @@ html {
   gap: 20px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+}
+.btn2:hover {
+  background-color: #0071e3;
+  color: white;
 }
 .h1 {
   margin-top: 80px;
-  font-size: 55px;
+  font-size: 35px;
   font-weight: 650;
 }
 .h5 {
   font-weight: 400;
-  font-size: 25px;
+  font-size: 18px;
 }
-.prod {
-  display: flex;
+.card-container {
   width: 100%;
-  margin: 5px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.card {
+  border: 5px solid white;
 }
 .card .detail {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  background-color: #f5f5f7;
+  text-align: center;
 }
-.card {
-  width: 50%;
-  height: 580px;
-  margin: 10px 5px;
-  object-position: bottom;
+.card img {
+  width: 100%;
+  object-fit: cover;
   background-position: center;
-  background-size: cover;
-}
-#card1 {
-  background: url(card1.png);
-}
-#card2 {
-  background: url(card2.png);
-}
-#card3 {
-  background: url(card3.png);
-}
-#card4 {
-  background: url(card4.png);
 }
 #card5 {
-  background: url(card5.png);
+  height: 700px;
 }
 #card6 {
-  background: url(card6.png);
+  height: 700px;
+}
+#card5 .detail {
+  background: url(Assets/mac.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+}
+#card6 .detail {
+  background: url(Assets/card5.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
