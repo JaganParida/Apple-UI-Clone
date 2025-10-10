@@ -114,14 +114,22 @@ html {
   font-size: 18px;
 }
 .card-container {
+  border-top: 10px solid rgb(255, 255, 255);
   width: 100%;
   display: grid;
-  grid-template-columns: 50% 50%;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 650px;
+  gap: 10px;
 }
 .card {
-  border: 5px solid white;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .card .detail {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -134,12 +142,7 @@ html {
   object-fit: cover;
   background-position: center;
 }
-#card5 {
-  height: 700px;
-}
-#card6 {
-  height: 700px;
-}
+
 #card5 .detail {
   background: url(Assets/mac.jpg);
   background-position: center;
